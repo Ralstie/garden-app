@@ -29,9 +29,9 @@ def generate_advice(season, plant_type):
     return advice
 
 
-# Current season and plant type.
-season = "summer"
-plant_type = "flower"
+# Ask the user for the season and plant type.
+season = input("Enter the season (summer/winter): ").lower()
+plant_type = input("Enter the plant type (flower/vegetable): ").lower()
 
 # Generate and display the gardening advice.
 advice = generate_advice(season, plant_type)
